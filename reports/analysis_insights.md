@@ -1,60 +1,41 @@
-# Analysis Insights — Indonesian Stock Market Intelligence
+# Analysis Insights
 
-## 1. Project Overview
+## Project Overview
 
-This analysis examines the historical performance and risk characteristics of 10 selected Indonesian stocks listed on the Indonesia Stock Exchange (IDX).
+This report summarizes the historical performance and risk characteristics of 10 Indonesian stocks analyzed in the Indonesian Stock Market Intelligence project.
 
-The analysis uses approximately three years of daily stock price data, from October 23, 2023, to October 21, 2026.
+The analysis uses historical price data over the selected observation period. Returns are based on price movements and may not include dividends, transaction fees, or taxes.
 
-The main objectives are to:
-- Compare cumulative and total returns across selected stocks.
-- Evaluate annualized volatility and maximum drawdown.
-- Compare average total returns across selected sectors.
-- Identify differences in historical risk and return.
+## Key Findings
 
-## 2. Key Findings
+### 1. Large Dispersion in Total Returns
 
-### Finding 1: ANTM.JK recorded the highest total return
+ANTM.JK recorded the highest total return at **84.21%**, while KLBF.JK recorded the lowest total return at **-58.74%**.
 
-ANTM.JK recorded a total return of approximately **+84.21%**, the highest among the 10 selected stocks during the observation period.
+The difference between these two results was **142.95 percentage points**, indicating substantial variation in historical performance across the selected stocks.
 
-This indicates that ANTM.JK had the strongest price performance within this sample over the period analyzed.
+### 2. Negative Average Total Return
 
-### Finding 2: KLBF.JK recorded the lowest total return
+The average total return across the 10 analyzed stocks was **-8.32%**. The average annualized volatility was **34.78%**.
 
-KLBF.JK recorded a total return of approximately **-58.74%**, the lowest among the selected stocks.
+Together, these metrics indicate that the sample experienced a negative average price return over the observation period alongside substantial price fluctuations. These aggregate metrics do not imply that every stock had a negative return or identical risk.
 
-Its maximum drawdown was approximately **-61.45%**, indicating a substantial decline from a previous peak during the observation period.
+### 3. Substantial Historical Drawdowns
 
-### Finding 3: Historical performance differed across selected sectors
+The average maximum drawdown across the analyzed stocks was **-61.45%**.
 
-The selected Mining stock recorded an average total return of approximately **+84.21%**, while the selected Energy stock recorded approximately **+25.28%**.
+This indicates that the sample included substantial peak-to-trough price declines. The average should not be interpreted as the drawdown of a combined portfolio or as the drawdown experienced by every individual stock.
 
-The selected Healthcare stock recorded approximately **-58.74%**. The Banking, Telecommunications, and Consumer and Industrial groups also had negative average total returns in this sample.
+## Limitations
 
-These results describe only the selected stocks and should not be interpreted as the performance of every company in each sector.
-
-## 3. Risk and Return Considerations
-
-Returns alone do not provide a complete picture of stock performance.
-
-Annualized volatility measures the variability of daily returns, while maximum drawdown measures the largest peak-to-trough decline in the observed price series.
-
-These metrics help compare historical risk characteristics alongside returns. However, they do not predict future performance or guarantee that a stock will behave similarly in the future.
-
-## 4. Limitations
-
-- The analysis includes only 10 selected stocks, not the entire Indonesian stock market.
-- Some sectors are represented by only one stock, limiting sector-level comparisons.
+- The findings apply only to the 10 selected stocks and the observation period used in this project.
 - Historical performance does not guarantee future results.
-- Annualized volatility is estimated using daily returns and a 252-trading-day convention.
-- Prices were retrieved using Yahoo Finance through the `yfinance` Python library. Data availability and adjustments may affect results.
-- The analysis is descriptive and is not investment advice.
+- Price-based returns may exclude dividends, transaction costs, and taxes.
+- Average metrics can hide important differences between individual stocks.
+- This project is for educational and analytical purposes only and is not investment advice.
 
-## 5. Conclusion
+## Next Steps
 
-The selected stocks exhibited substantial differences in historical returns, volatility, and maximum drawdown. ANTM.JK recorded the highest total return in the sample, while KLBF.JK recorded the lowest total return and the largest maximum drawdown.
-
-The findings demonstrate how Python and Pandas can be used to collect, validate, process, and analyze historical stock market data. The results will support the next stage of the project: building an interactive Power BI dashboard.
-
-*This project is for educational and analytical purposes only and does not constitute investment advice.*
+- Compare individual stock volatility and maximum drawdown.
+- Investigate the relationship between total return and annualized volatility.
+- Verify the source data, observation period, and calculation methodology before drawing further conclusions.
